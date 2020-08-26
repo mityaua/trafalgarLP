@@ -1,23 +1,149 @@
-/* main bg-color #FFFFFF */
-/* main text color #7D7987 */
-/* title color #000000 */
-/* accent color #458FF6 */
+/* цвет основного текста #7D7987 */
+/* вторичный цвет текста #000000 */
+/* дополнительный цвет текста #1F1534; */
+/* цвет фона #FFFFFF */
+/* акцент #2196F3 */
 
 :root {
-  --main-bg-color: #ffffff;
-  --main-text-color: #7d7987;
-  --title-color: #000000;
+  --primary-text-color: #7d7987;
+  --second-text-color: #000000;
+  --additional-text-color: #1f1534;
+  --primary-bg-color: #ffffff;
   --accent-color: #458ff6;
 }
 
 body {
   background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
+
+  font-family: Muli, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.67;
 }
+
+@font-face {
+  font-family: "Muli";
+  src: local("Muli Light"), local("Muli-Light"),
+    url("../fonts/Mulilight.woff2") format("woff2"),
+    url("../fonts/Mulilight.woff") format("woff"),
+    url("../fonts/Mulilight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Muli";
+  src: local("Muli Regular"), local("Muli-Regular"),
+    url("../fonts/Muliregular.woff2") format("woff2"),
+    url("../fonts/Muliregular.woff") format("woff"),
+    url("../fonts/Muliregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Muli";
+  src: local("Muli Bold"), local("Muli-Bold"),
+    url("../fonts/Mulibold.woff2") format("woff2"),
+    url("../fonts/Mulibold.woff") format("woff"),
+    url("../fonts/Mulibold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+/* Утилиты */
 
 .list {
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-/* header logo */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
+/* header*/
+
+/* logo */
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.25;
+  text-decoration: none;
+  color: #233348;
+}
+
+.logo span {
+  /* display: inline-block;
+  width: 41px;
+  height: 41px;
+  text-align: center;
+  border-radius: 41px; */
+
+  font-size: 26px;
+  line-height: 1.27;
+
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+/* menu */
+
+.nav-links {
+  font-weight: 400;
+  line-height: 1.27;
+  text-decoration: none;
+  color: var(--additional-text-color);
+  opacity: 0.5;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  font-weight: 700;
+  color: var(--additional-text-color);
+}
+
+.nav-links.current {
+  font-weight: 700;
+  color: var(--additional-text-color);
+}
+
+/* hero section */
+
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  color: var(--second-text-color);
+}
+
+.hero-text {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.52;
+}
+
+.hero-button {
+  font-weight: 700;
+  line-height: 3.33;
+}
+
+/* servise-section */
+
+.servise-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.56;
+
+  color: var(--second-text-color);
+}
+
+.servise-text {
+  font-weight: 300;
+}

@@ -11,6 +11,12 @@
 healthcare, accessible on mobile and online 
 for everyone"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -18,15 +24,17 @@ for everyone"
     <header>
       <nav>
         <!-- header logo -->
-        <a href="./index.html" title="Main page"><span>T</span>Trafalgar</a>
+        <a href="./index.html" class="logo" title="Main page"
+          ><span>T</span>Trafalgar</a
+        >
 
         <!-- header menu -->
         <ul class="nav list">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#">Find a doctor</a></li>
-          <li><a href="#">Apps</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">About us</a></li>
+          <li><a href="./index.html" class="nav-links current">Home</a></li>
+          <li><a href="#" class="nav-links">Find a doctor</a></li>
+          <li><a href="#" class="nav-links">Apps</a></li>
+          <li><a href="#" class="nav-links">Testimonials</a></li>
+          <li><a href="#" class="nav-links">About us</a></li>
         </ul>
       </nav>
     </header>
@@ -40,19 +48,22 @@ for everyone"
           width="693"
           height="598"
         />
-        <h1>Virtual healthcare for you</h1>
-        <p>
+        <h1 class="hero-title">
+          Virtual healthcare <br />
+          for you
+        </h1>
+        <p class="hero-text">
           Trafalgar provides progressive, and affordable <br />
           healthcare, accessible on mobile and online <br />
           for everyone
         </p>
-        <button type="button">Consult today</button>
+        <button type="button" class="hero-button">Consult today</button>
       </section>
 
       <!-- services section -->
       <section>
-        <h2>Our services</h2>
-        <p>
+        <h2 class="servise-title">Our services</h2>
+        <p class="servise-text">
           We provide to you the best choiches for you. Adjust it to your health
           needs and make sure your undergo treatment with our highly qualified
           doctors you can consult with us which type of service is suitable for
